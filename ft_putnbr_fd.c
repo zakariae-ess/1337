@@ -6,19 +6,32 @@
 /*   By: zessalih <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 10:23:38 by zessalih          #+#    #+#             */
-/*   Updated: 2026/10/23 11:26:02 by zessalih         ###   ########.fr       */
+/*   Updated: 2026/11/02 16:42:28 by zessalih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include "libft.h"
 
+static void	put_nbr(long num, int fd)
+{
+	char	c;
+
+	if (num >= 10)
+		put_nbr(num / 10, fd);
+	c = num % 10 + '0';
+	write(fd, &c, 1);
+}
+
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	*str;
-	int		size;
+	long	num;
 
-	str = ft_itoa(n);
-	size = ft_strlen(str);
-	write(fd, str, size);
+	num = n;
+	if (num < 0)
+	{
+		write(fd, "-", 1);
+		num = -num;
+	}
+	put_nbr(num, fd);
 }
