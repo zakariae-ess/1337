@@ -1,0 +1,35 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zessalih <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/21 11:27:19 by zessalih          #+#    #+#             */
+/*   Updated: 2026/10/27 15:17:25 by zessalih         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdlib.h>
+
+char	*ft_strdup(const char *s)
+{
+	int		s_len;
+	int		i;
+	char	*str;
+
+	i = 0;
+	s_len = 0;
+	while (s[s_len] != '\0')
+		s_len++;
+	str = malloc((s_len + 1) * sizeof(char));
+	if (str == NULL)
+		return (NULL);
+	while (i < s_len)
+	{
+		str[i] = s[i];
+		i++;
+	}
+	str[i] = '\0';
+	return (str);
+}
