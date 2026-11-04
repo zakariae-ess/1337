@@ -6,7 +6,7 @@
 /*   By: zessalih <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 10:15:14 by zessalih          #+#    #+#             */
-/*   Updated: 2026/11/01 11:28:09 by zessalih         ###   ########.fr       */
+/*   Updated: 2026/11/03 09:22:00 by zessalih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,10 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	i = 0;
 	if (nmemb == 0 || size == 0)
-		return (NULL);
+	{
+		nmemb = 1;
+		size = 1;
+	}
 	if (size > (size_t)-1 / nmemb)
 		return (NULL);
 	total = nmemb * size;

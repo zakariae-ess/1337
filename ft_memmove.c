@@ -6,7 +6,7 @@
 /*   By: zessalih <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 13:46:47 by zessalih          #+#    #+#             */
-/*   Updated: 2026/10/30 18:43:02 by zessalih         ###   ########.fr       */
+/*   Updated: 2026/11/03 08:48:09 by zessalih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	size_t	i;
 
 	i = 0;
+	if (src == dest)
+		return (dest);
 	if (dest <= src)
 	{
 		while (i < n)

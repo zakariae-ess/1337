@@ -6,7 +6,7 @@
 /*   By: zessalih <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 20:51:39 by zessalih          #+#    #+#             */
-/*   Updated: 2026/10/23 09:41:56 by zessalih         ###   ########.fr       */
+/*   Updated: 2026/11/02 15:55:56 by zessalih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int	size;
+	size_t	size;
 
 	if (s == NULL)
 		return ;

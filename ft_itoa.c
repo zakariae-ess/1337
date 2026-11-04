@@ -6,22 +6,19 @@
 /*   By: zessalih <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 12:27:17 by zessalih          #+#    #+#             */
-/*   Updated: 2026/10/27 20:51:49 by zessalih         ###   ########.fr       */
+/*   Updated: 2026/11/02 14:51:46 by zessalih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int	str_size(int n, int *sign)
+static int	str_size(int n)
 {
 	int	size;
 
 	size = 1;
 	if (n < 0)
-	{
-		(*sign)++;
 		size++;
-	}
 	while (n / 10 != 0)
 	{
 		size++;
@@ -30,9 +27,9 @@ int	str_size(int n, int *sign)
 	return (size);
 }
 
-void	fill_arr(char *str, long num, int index, int len)
+static void	fill_arr(char *str, long num, int index, int len)
 {
-	if (num == 0 && index == 0)
+	if (num == 0)
 	{
 		str[index] = '0';
 		index++;
@@ -50,14 +47,12 @@ char	*ft_itoa(int n)
 {
 	long	num;
 	int		size;
-	int		sign;
 	int		index;
 	char	*str;
 
 	num = n;
-	sign = 0;
 	index = 0;
-	size = str_size(n, &sign);
+	size = str_size(n);
 	str = malloc((size + 1) * sizeof(char));
 	if (str == NULL)
 		return (NULL);
