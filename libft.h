@@ -3,13 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: zessalih <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: zessalih <zessalih@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/18 20:17:19 by zessalih          #+#    #+#             */
-/*   Updated: 2026/10/25 21:04:29 by zessalih         ###   ########.fr       */
+/*   Updated: 2026/11/09 14:19:20 by zessalih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#ifndef LIBFT_H
+
 # define LIBFT_H
 
 # include <stddef.h>
