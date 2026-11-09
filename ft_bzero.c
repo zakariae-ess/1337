@@ -6,11 +6,11 @@
 /*   By: zessalih <zessalih@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 09:06:31 by zessalih          #+#    #+#             */
-/*   Updated: 2026/11/09 14:16:58 by zessalih         ###   ########.fr       */
+/*   Updated: 2026/11/09 16:22:32 by zessalih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

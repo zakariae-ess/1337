@@ -6,9 +6,11 @@
 /*   By: zessalih <zessalih@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 09:02:11 by zessalih          #+#    #+#             */
-/*   Updated: 2026/11/09 14:16:53 by zessalih         ###   ########.fr       */
+/*   Updated: 2026/11/09 16:22:25 by zessalih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

@@ -6,12 +6,11 @@
 /*   By: zessalih <zessalih@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 11:42:32 by zessalih          #+#    #+#             */
-/*   Updated: 2026/11/09 14:18:07 by zessalih         ###   ########.fr       */
+/*   Updated: 2026/11/09 16:24:07 by zessalih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 t_list	*ft_lstnew(void *content)
 {

@@ -6,11 +6,10 @@
 /*   By: zessalih <zessalih@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 10:23:38 by zessalih          #+#    #+#             */
-/*   Updated: 2026/11/09 14:18:31 by zessalih         ###   ########.fr       */
+/*   Updated: 2026/11/09 16:25:23 by zessalih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 static void	put_nbr(long num, int fd)

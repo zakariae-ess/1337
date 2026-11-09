@@ -6,11 +6,10 @@
 /*   By: zessalih <zessalih@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 09:00:05 by zessalih          #+#    #+#             */
-/*   Updated: 2026/11/09 14:18:35 by zessalih         ###   ########.fr       */
+/*   Updated: 2026/11/09 16:25:39 by zessalih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 static int	num_words(const char *s, char c)

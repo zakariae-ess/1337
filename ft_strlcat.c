@@ -6,11 +6,10 @@
 /*   By: zessalih <zessalih@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 20:25:21 by zessalih          #+#    #+#             */
-/*   Updated: 2026/11/09 14:18:48 by zessalih         ###   ########.fr       */
+/*   Updated: 2026/11/09 16:26:12 by zessalih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
 #include "libft.h"
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
