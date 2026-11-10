@@ -6,7 +6,7 @@
 /*   By: zessalih <zessalih@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 09:59:51 by zessalih          #+#    #+#             */
-/*   Updated: 2026/11/09 16:24:37 by zessalih         ###   ########.fr       */
+/*   Updated: 2026/11/10 11:15:06 by zessalih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	size_t	i;
 
 	i = 0;
-	if (src == dest)
+	if (n == 0)
 		return (dest);
 	while (i < n)
 	{

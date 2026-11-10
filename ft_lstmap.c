@@ -6,7 +6,7 @@
 /*   By: zessalih <zessalih@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/25 21:05:16 by zessalih          #+#    #+#             */
-/*   Updated: 2026/11/09 16:23:55 by zessalih         ###   ########.fr       */
+/*   Updated: 2026/11/10 11:59:32 by zessalih         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,10 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	{
 		new_content = f(lst->content);
 		node = ft_lstnew(new_content);
-		if (!node || !new_content)
+		if (!node)
 		{
+			del(new_content);
 			ft_lstclear(&new_lst, del);
-			free(node);
 			return (NULL);
 		}
 		ft_lstadd_back(&new_lst, node);
